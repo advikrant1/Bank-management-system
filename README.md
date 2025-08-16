@@ -84,3 +84,8 @@ Run the Application:
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Contact
+For any questions or feedback, feel free to contact me:  
+**Email:** payal09apr@gmail.com  
+**Portfolio:** [myportfolio.netlify.app](https://myportfoliopayal.netlify.app/)

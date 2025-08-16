@@ -1,0 +1,43 @@
+Create Database bankmanagement;
+use bankmanagement;
+CREATE TABLE users (
+ account_no INTEGER NOT NULL AUTO_INCREMENT,
+ name VARCHAR (50),
+ phoneno CHAR (10),
+ address TEXT,
+ balance INTEGER,
+ email VARCHAR(128),
+ password VARCHAR(128),
+ PRIMARY KEY CLUSTERED (account_no)
+);
+CREATE TABLE transfer (
+ sno INTEGER NOT NULL AUTO_INCREMENT,
+ date VARCHAR (100),
+ account_no INTEGER,
+ balance INTEGER,
+ transamt INTEGER,
+ to_acc_no INTEGER,
+ PRIMARY KEY CLUSTERED (sno)
+);
+CREATE TABLE deposit (
+ sno INTEGER NOT NULL AUTO_INCREMENT,
+ date VARCHAR (100),
+ account_no INTEGER,
+ balance INTEGER,
+ transamt INTEGER,
+ PRIMARY KEY CLUSTERED (sno)
+);
+CREATE TABLE withdraw (
+ sno INTEGER NOT NULL AUTO_INCREMENT,
+ date VARCHAR (100),
+ account_no INTEGER,
+ balance INTEGER,
+ transamt INTEGER,
+ PRIMARY KEY CLUSTERED (sno)
+);
+CREATE TABLE mpin (
+num INTEGER NOT NULL AUTO_INCREMENT,
+pin INTEGER,
+account_no INTEGER,
+PRIMARY KEY CLUSTERED (num)
+);
